@@ -41,5 +41,5 @@ https://github.com/user-attachments/assets/da6e8fe2-6404-4ea5-ac71-4acb1ae8ed89
 #Team Details
 Team Name : Synaptic Squad
 Team Lead : Shruti Verma
-Team Mmember : Vaibhav Sharma
+Team Member : Vaibhav Sharma
 Team Member : Dharmender Chaudhary
