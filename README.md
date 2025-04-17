@@ -27,6 +27,14 @@ Improved model accuracy and robustness.
 Deployment on embedded devices.
 Creation of a larger and more diverse sign language dataset.
 
+#Demo screenshots
+![image](https://github.com/user-attachments/assets/2cfb5431-01a9-4d8c-a2e5-ef2867dbf62c)
+![image](https://github.com/user-attachments/assets/9a8650ae-d04b-49a7-a8c5-6db4b72b197a)
+![Uploading image.png…]()
+
+
+
+
 #Team Details
 Team Name : Synaptic Squad
 Team Lead : Shruti Verma
