@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Interpreter</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="style1.css">
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Sign Language Interpreter</h1>
+            <p class="subtitle">Real-time sign language detection using deep learning</p>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <div class="main-grid">
+                <!-- Webcam Feed Section -->
+                <section class="webcam-section">
+                    <h2>Camera Feed</h2>
+                    <div class="webcam-container" id="webcam-container">
+                        <!-- Video placeholder - will be replaced by actual webcam feed -->
+                        <div class="webcam-placeholder">
+                            <i class="fas fa-video"></i>
+                            <p>Webcam feed will appear here</p>
+                        </div>
+                        <!-- Actual video element for webcam -->
+                        <video id="webcam" autoplay playsinline muted></video>
+                    </div>
+                    <div class="controls">
+                        <button id="start-camera" class="btn primary"><i class="fas fa-play"></i> Start Camera</button>
+                        <button id="stop-camera" class="btn secondary" disabled><i class="fas fa-stop"></i> Stop Camera</button>
+                    </div>
+                </section>
+
+                <!-- Prediction Section -->
+                <section class="prediction-section">
+                    <h2>Interpretation</h2>
+                    <div class="current-prediction">
+                        <h3>Current Prediction</h3>
+                        <div class="prediction-display" id="current-prediction">
+                            <p class="no-prediction">No prediction yet</p>
+                        </div>
+                        <div class="controls">
+                            <button id="start-prediction" class="btn primary"><i class="fas fa-brain"></i> Start Prediction</button>
+                            <button id="stop-prediction" class="btn secondary" disabled><i class="fas fa-pause"></i> Stop Prediction</button>
+                            <button id="speak-text" class="btn accent"><i class="fas fa-volume-up"></i> Speak Text</button>
+                        </div>
+                    </div>
+
+                    <div class="prediction-history">
+                        <h3>Prediction History</h3>
+                        <div class="history-container" id="prediction-history">
+                            <p class="no-history">No history yet</p>
+                            <!-- History items will be added here -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Image Upload Section (Optional) -->
+            <section class="upload-section">
+                <h2>Test with Sample Images</h2>
+                <p>Upload a sample gesture image to test the model:</p>
+                <div class="upload-container">
+                    <input type="file" id="image-upload" accept="image/*" class="file-input">
+                    <label for="image-upload" class="file-label">
+                        <i class="fas fa-upload"></i> Choose a file
+                    </label>
+                    <span class="file-name" id="file-name">No file selected</span>
+                    <button id="process-image" class="btn primary"><i class="fas fa-check"></i> Process Image</button>
+                </div>
+                <div class="uploaded-image">
+                    <img id="uploaded-preview" src="" alt="Uploaded image preview">
+                </div>
+            </section>
+
+            <!-- Model Info Section -->
+            <section class="model-info">
+                <h2>About the Model</h2>
+                <div class="info-stats">
+                    <div class="stat-item">
+                        <div class="stat-label">Model Type</div>
+                        <div class="stat-value">CNN (Convolutional Neural Network)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Accuracy</div>
+                        <div class="stat-value">96.7%</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Supported Signs</div>
+                        <div class="stat-value">26 (English Alphabet)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Processing</div>
+                        <div class="stat-value">Real-time</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Info Section -->
+            <section class="project-info">
+                <h2>About the Project</h2>
+                <p>This Sign Language Interpreter uses deep learning to recognize and translate hand gestures into text in real-time. The system employs computer vision techniques with OpenCV for hand detection and segmentation, followed by a Convolutional Neural Network built with TensorFlow/Keras to classify the detected gestures.</p>
+                <p>The project aims to bridge communication gaps between deaf and hearing individuals by providing a tool that can interpret sign language in real-time, making everyday interactions more accessible.</p>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Sign Language Interpreter Project</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for interactivity - Placeholder for future implementation -->
+    <script>
+        // This is a placeholder for JavaScript functionality
+        // In the actual implementation, this would connect to your Python backend
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Button event listeners (placeholder)
+            document.getElementById('start-camera').addEventListener('click', function() {
+                // Code to start camera would go here
+                document.getElementById('start-camera').disabled = true;
+                document.getElementById('stop-camera').disabled = false;
+                document.getElementById('webcam').style.display = 'block';
+                document.querySelector('.webcam-placeholder').style.display = 'none';
+            });
+
+            document.getElementById('stop-camera').addEventListener('click', function() {
+                // Code to stop camera would go here
+                document.getElementById('start-camera').disabled = false;
+                document.getElementById('stop-camera').disabled = true;
+                document.getElementById('webcam').style.display = 'none';
+                document.querySelector('.webcam-placeholder').style.display = 'flex';
+            });
+
+            document.getElementById('start-prediction').addEventListener('click', function() {
+                // Code to start prediction would go here
+                document.getElementById('start-prediction').disabled = true;
+                document.getElementById('stop-prediction').disabled = false;
+                document.getElementById('current-prediction').innerHTML = '<p class="predicting">Predicting...</p>';
+            });
+
+            document.getElementById('stop-prediction').addEventListener('click', function() {
+                // Code to stop prediction would go here
+                document.getElementById('start-prediction').disabled = false;
+                document.getElementById('stop-prediction').disabled = true;
+                document.getElementById('current-prediction').innerHTML = '<p class="no-prediction">Prediction stopped</p>';
+            });
+
+            document.getElementById('speak-text').addEventListener('click', function() {
+                // Code for text-to-speech would go here
+                alert('Text-to-speech functionality will be implemented in the backend');
+            });
+
+            // File upload preview
+            document.getElementById('image-upload').addEventListener('change', function(e) {
+                if (e.target.files.length > 0) {
+                    const fileName = e.target.files[0].name;
+                    document.getElementById('file-name').textContent = fileName;
+                    
+                    // Preview image
+                    const reader = new FileReader();
+                    reader.onload = function(event) {
+                        document.getElementById('uploaded-preview').src = event.target.result;
+                        document.getElementById('uploaded-preview').style.display = 'block';
+                    }
+                    reader.readAsDataURL(e.target.files[0]);
+                }
+            });
+
+            document.getElementById('process-image').addEventListener('click', function() {
+                // Code to process the uploaded image would go here
+                alert('Image processing functionality will be implemented in the backend');
+            });
+        });
+    </script>
+</body>
+</html>
