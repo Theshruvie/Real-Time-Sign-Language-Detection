@@ -32,7 +32,7 @@ Creation of a larger and more diverse sign language dataset.
 ![image](https://github.com/user-attachments/assets/9a8650ae-d04b-49a7-a8c5-6db4b72b197a)
 
 #Demo Video
-![image](https://github.com/user-attachments/assets/4ac5fd19-7b88-4936-87e7-569cbbef7be6)
+![](fff3c7cb5695435593069ed855c73191 (1).gif)
 
 
 
