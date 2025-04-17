@@ -21,6 +21,11 @@ Future Enhancements (Optional):
 
 (This section could outline potential future developments, such as:
 
+Multilingual Sign Language Support:
+Expand the project's capabilities to recognize and translate sign languages beyond American Sign Language (ASL), including (but not limited to) British Sign Language (BSL), French Sign Language (LSF), Japanese Sign Language (JSL), and others.
+Develop a modular sign language mapping system that allows users to select their preferred sign language or contribute to the inclusion of new languages.
+Address the challenges of cross-linguistic variations in sign language grammar and vocabulary.
+Create a database that allows for easy expansion of sign languages.
 Support for more complex sign language grammar.
 Integration with other modalities (e.g., speech).
 Improved model accuracy and robustness.
