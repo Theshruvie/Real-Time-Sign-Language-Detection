@@ -30,10 +30,10 @@ Creation of a larger and more diverse sign language dataset.
 #Demo screenshots
 ![image](https://github.com/user-attachments/assets/2cfb5431-01a9-4d8c-a2e5-ef2867dbf62c)
 ![image](https://github.com/user-attachments/assets/9a8650ae-d04b-49a7-a8c5-6db4b72b197a)
-![image](https://github.com/user-attachments/assets/5fd84dea-0d1d-4c48-be85-99779171c98e)
 
 #Demo Video
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/4ac5fd19-7b88-4936-87e7-569cbbef7be6)
+
 
 
 
